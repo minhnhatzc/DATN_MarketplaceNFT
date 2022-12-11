@@ -117,7 +117,7 @@ const AssetDetails = () => {
             : currentAccount === nft.owner.toLowerCase()
               ? (
                 <Button
-                  btnName="List on Polyplace"
+                  btnName="List on Marketplace"
                   btnType="primary"
                   classStyles="mr-5 sm:mr-0 sm:mb-5 rounded-xl"
                   handleClick={() => router.push(`/resell-nft?id=${nft.tokenId}&tokenURI=${nft.tokenURI}`)}
@@ -141,7 +141,7 @@ const AssetDetails = () => {
           footer={(
             <div className="flex flex-row sm:flex-col">
               <Button
-                btnName="Checkout"
+                btnName="BUY"
                 btnType="primary"
                 classStyles="mr-5 sm:mr-0 sm:mb-5 rounded-xl"
                 handleClick={checkout}

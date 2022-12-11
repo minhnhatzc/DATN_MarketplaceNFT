@@ -24,8 +24,7 @@ An open platform where users can mint their own NFTs and list them on a Marketpl
 
 `NFTMarketplace` Polygon(Mumbai Testnet) smart contract address:
 
-https://mumbai.polygonscan.com/address/0xF5f6B924332C350E3Fcd3A50Fc94db822f0B760f
-
+https://testnet.bscscan.com/address/0x6e7c1f60eD4De678dE5441F582b474f0fE0247F3
 ### Demo video
 
 https://www.youtube.com/watch?v=kVIb7MGJ53k&t=36s
@@ -40,7 +39,7 @@ Users can perform the following actions on the NFT Marketplace:
 
 #### Mint
 
-Input a name, description and upload a file (image) to mint an NFT. Once minted, a representation of this NFT will be displayed in the marketplace and it will be owned by its creator. This is open for everyone, meaning everyone can participate in this NFT creation through this platform. 
+Input a name, description and upload a file (image) to mint an NFT. Once minted, a representation of this NFT will be displayed in the marketplace and it will be owned by its creator. This is open for everyone, meaning everyone can participate in this NFT creation through this platform.
 
 #### Buy NFT
 
@@ -48,7 +47,7 @@ A user can buy NFTs which someone else offered. This will require paying the req
 
 #### Sell NFT
 
-Users can sell their NFT by specifying its price (in MATIC). If someone fulfills this offer, then the NFT and it's ownership is transferred to the new owner. 
+Users can sell their NFT by specifying its price (in MATIC). If someone fulfills this offer, then the NFT and it's ownership is transferred to the new owner.
 
 ### Connect to Mumbai Testnet
 
@@ -151,7 +150,7 @@ An instance of Polyplace will be up and running on your local environment.
 
 ### Future Ideas
 
-- Clear deploy on Polygon Mainnet. 
+- Clear deploy on Polygon Mainnet.
 - Auction features.
 - Bulk upload of NFTs as collections.
 - Creator details and more.

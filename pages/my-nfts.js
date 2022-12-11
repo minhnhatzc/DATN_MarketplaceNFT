@@ -8,6 +8,8 @@ import { NFTContext } from '../context/NFTContext';
 import { Loader, NFTCard, Banner, SearchBar } from '../components';
 import images from '../assets';
 import { shortenAddress } from '../utils/shortenAddress';
+// import { getAddress, isAddress } from 'ethers/lib/utils';
+// import { MarketAddress } from '../context/constants';
 
 const MyNFTs = () => {
   const { fetchMyNFTsOrListedNFTs, currentAccount } = useContext(NFTContext);

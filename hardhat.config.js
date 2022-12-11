@@ -1,18 +1,17 @@
-const fs = require('fs');
-
-require('@nomiclabs/hardhat-waffle');
-
-const privateKey = fs.readFileSync('.secret').toString().trim();
-
+/** @type import('hardhat/config').HardhatUserConfig */
+require("@nomicfoundation/hardhat-toolbox");
+require('dotenv').config();
+/** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
+  solidity: "0.8.9",
   networks: {
-    hardhat: {
-      chainId: 1337,
-    },
-    matic: {
-      url: 'https://rpc-mumbai.maticvigil.com',
-      accounts: [privateKey],
-    },
+    bsctest: {
+      url: "https://blue-stylish-rain.bsc-testnet.discover.quiknode.pro/06802bcd56f285056c23712350ade3a33eeee255/",
+      accounts: [process.env.PRIV_KEY]
+    }
   },
-  solidity: '0.8.4',
+  etherscan: {
+    apiKey: process.env.API_KEY
+  }
+
 };

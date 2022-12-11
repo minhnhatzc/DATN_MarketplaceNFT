@@ -6,9 +6,9 @@ import { create as ipfsHttpClient } from 'ipfs-http-client';
 
 import { MarketAddress, MarketAddressABI } from './constants';
 
-const subdomainName = 'polyplace';
-const projectId = '2DZ5SclLb6YJBoDvir5Rh96PAVt';
-const projectSecret = 'd44b2bde4d2bb227907264225330c102';
+const subdomainName = 'minhnhat-marketplace';
+const projectId = '2HgELLgyVxqzwhx6W9ocFyAKOr1';
+const projectSecret = 'b292615069535a3d749d90f38d6ce95b';
 
 const authorization = `Basic ${btoa(`${projectId}:${projectSecret}`)}`;
 
@@ -26,7 +26,7 @@ const fetchContract = (signerOrProvider) => new ethers.Contract(MarketAddress, M
 export const NFTContext = React.createContext();
 
 export const NFTProvider = ({ children }) => {
-  const nftCurrency = 'MATIC';
+  const nftCurrency = 'BNB';
   const [currentAccount, setCurrentAccount] = useState('');
   const [isLoadingNFT, setIsLoadingNFT] = useState(false);
 
@@ -90,9 +90,7 @@ export const NFTProvider = ({ children }) => {
     const { name, description, price } = formInput;
 
     if (!name || !description || !price || !fileUrl) return;
-
     const data = JSON.stringify({ name, description, image: fileUrl });
-
     try {
       const added = await client.add(data);
       const url = endpointBasePath + added.path;
@@ -109,7 +107,7 @@ export const NFTProvider = ({ children }) => {
 
   const fetchNFTs = async () => {
     setIsLoadingNFT(false);
-    const provider = new ethers.providers.JsonRpcProvider('https://polygon-mumbai.g.alchemy.com/v2/aT46mujHo45399eX-fWp9mucSwWW6iuA');
+    const provider = new ethers.providers.JsonRpcProvider('https://blue-stylish-rain.bsc-testnet.discover.quiknode.pro/06802bcd56f285056c23712350ade3a33eeee255/');
     const contract = fetchContract(provider);
     const data = await contract.fetchMarketItems();
 
