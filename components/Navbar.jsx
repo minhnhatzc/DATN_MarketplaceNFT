@@ -24,7 +24,7 @@ const MenuItems = ({ isMobile, active, setActive, setIsOpen }) => {
 
   return (
     <ul className={`list-none flexCenter flex-row ${isMobile && 'flex-col h-full'}`}>
-      {['Explore NFTs', 'Listed NFTs', 'My NFTs'].map((item, i) => (
+      {['Home', 'Listed NFTs', 'My NFTs'].map((item, i) => (
         <li
           key={i}
           onClick={() => {
@@ -50,7 +50,7 @@ const ButtonGroup = ({ setActive, router, setIsOpen }) => {
 
   return currentAccount ? (
     <Button
-      btnName="Create"
+      btnName="Create NFT"
       classStyles="mx-2 rounded-xl"
       handleClick={() => {
         setActive('');
@@ -61,7 +61,7 @@ const ButtonGroup = ({ setActive, router, setIsOpen }) => {
     />
   ) : (
     <Button
-      btnName="Connect"
+      btnName="Connect Wallet"
       classStyles="mx-2 rounded-xl"
       handleClick={connectWallet}
     />
