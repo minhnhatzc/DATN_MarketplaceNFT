@@ -27,8 +27,6 @@ An open platform where users can mint their own NFTs and list them on a Marketpl
 https://testnet.bscscan.com/address/0x6e7c1f60eD4De678dE5441F582b474f0fE0247F3
 ### Demo video
 
-https://www.youtube.com/watch?v=kVIb7MGJ53k&t=36s
-
 ### Project details
 
 Users can access the application via web-browser, and must have the Metamask wallet installed. The interface, built with Next.js, relies on the ethers.js library to communicate with the smart contracts through Metamask. This means that the data reflected on the front-end application is fetched from the Polygon blockchain. Each action performed by the user (mint an NFT, sell NFT, buy NFT...) creates a transaction on Polygon, which will requires Metamask confirmation and a small fee, and this transaction will permanently modify the state of the NFTMarketplace smart contracts. On top of it, user's NFT Metadata will be uploaded to the IPFS, generating a hash which will be permanently recorded on the blockchain to prove ownership.
