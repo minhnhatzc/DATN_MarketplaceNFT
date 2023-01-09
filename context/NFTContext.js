@@ -6,9 +6,9 @@ import { create as ipfsHttpClient } from 'ipfs-http-client';
 
 import { MarketAddress, MarketAddressABI } from './constants';
 
-const subdomainName = 'minhnhat-marketplace';
-const projectId = '2HgELLgyVxqzwhx6W9ocFyAKOr1';
-const projectSecret = 'b292615069535a3d749d90f38d6ce95b';
+const subdomainName = '';
+const projectId = '';
+const projectSecret = '';
 
 const authorization = `Basic ${btoa(`${projectId}:${projectSecret}`)}`;
 
