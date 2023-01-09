@@ -3,7 +3,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['minhnhat-marketplace.infura-ipfs.io'],
+    domains: ['infura-ipfs.io'],
   },
 };
 
